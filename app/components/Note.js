@@ -1,16 +1,13 @@
 import React from 'react'
-import { collectUserIds } from '../utils/methods'
-
-const idLength = 10;
-const ids = collectUserIds(idLength, 2);
+import uuid from 'uuid';
 
 const notes = [
   {
-    id: ids[0],
+    id: uuid.v4(),
     task: 'First Task'
   },
   {
-    id: ids[1],
+    id: uuid.v4(),
     task: 'Second Task'
   }
 ];
